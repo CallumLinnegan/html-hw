@@ -1,0 +1,164 @@
+
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+body {
+  background: #e7e7e7;
+}
+
+
+.latitude {
+  background-color: #4aaaa5;
+  font-size: 20px;
+  width: 200px;
+  text-align: center;
+  color: white;
+}
+
+.visualisation {
+  background-color: #4aaaa5;
+  font-size: 20px;
+  width: 200px;
+  text-align: center;
+  color: white;
+}
+/* Giving our navbar some padding and a background color */
+.navbar {
+  padding: 20px;
+  background: white;
+  width: 100%;
+}
+
+.GeneralInformation {
+  float: left;
+}
+
+.new {
+  display: flex;
+}
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+.navbar li {
+  display: inline;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 0;
+  float: right;
+  height: 0;
+}
+
+/* Getting rid of the default link styles here */
+.navbar li a {
+  color: #000;
+  text-decoration: none;
+  float: right;
+}
+
+.header {
+  height: 100px;
+  padding-top: 0px;
+  background: #ffffff;
+  color: #4aaaa5;
+}
+
+#MaxTemperature {
+  height: 300px;
+  width: 400px;
+  position: relative;
+}
+
+#Humidity {
+  height: 200px;
+  width: 300px;
+  position: relative;
+}
+#Cloudiness {
+  height: 200px;
+  width: 300px;
+  position: relative;
+}
+#WindSpeed {
+  height: 200px;
+  width: 300px;
+  position: relative;
+}
+
+#MaxTemperature1 {
+  height: 200px;
+  width: 300px;
+  position: relative;
+}
+#ProjectDescription {
+  background-color: white;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+/* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
+.header h1 {
+  padding: 20px;
+  margin: 0;
+  color:#4aaaa5;
+  text-align: left;
+  width: 100%;
+}
+
+#nav-select {
+  visibility: hidden;
+}
+
+#multipleImages {
+  flex-wrap: wrap;
+  float: right;
+  width: 35%;
+  background: white;
+  margin-left: 20px;
+}
+
+#MaxTemperature_comp {
+width: 50%;
+height: 50%;
+top: 0%;
+float: left;
+}
+
+#Cloudiness_comp {
+  width: 50%;
+  height: 50%;
+  top: 0%;
+  float: left;
+  }
+
+#WindSpeed_comp {
+    width: 50%;
+    height: 50%;
+    top: 0%;
+    float: right;
+}
+#Humidity_comp {
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  right: 50%;
+  float: right;
+  }
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+@media (max-width: 480px) {
+  .navbar li {
+    padding: 10px;
+  }
+
+  .post {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .navbar ul {
+    visibility: hidden;
+  }
+
+  #nav-select {
+    visibility: visible;
+  }
+}
+
+
