@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+	<title>Web Visualisation</title>
+	<link rel="stylesheet" type="text/css" href="Pages/styles.css">
+</head>
+
+<body>
+	<div class="container">
+	  <nav class="navbar">
+		<ul>
+		  <header class='latitude'>latitude</header>
+		  <li>
+			<select class="plots">
+				<option value="Plots">Plots</option>
+				<option value="Max Temperature">Max Temperature</option>
+				<option value="Humidity">Humidity</option>
+				<option value="Cloudiness">Cloudiness</option>
+				<option value="Wind Speed">Wind Speed</option>
+			</select>
+		  </li>
+		  <li>
+			<a class="comparison" href="#">Comparison</a>
+		  </li>
+		  <li>
+			<a class="data" href="Pages/data.html">Data</a>
+		  </li>
+		</ul>
+	  </nav>
+ 
+	  <br>
+	  <div class="new">
+		<section id="GeneralInformation">
+	  <header class="header">
+		<h1>Summary: Latitude vs. X</h1>
+	  </header>
+	  <main>
+			<section id="ProjectDescription">
+					<img id='MaxTemperature' src="Assests/Fig1.png" alt="MaxTemp">
+				<p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this anlaysis, we first pulled data from the OpenWeatherMap Api to assemble a dataset on over 500 cities.</p>
+				<p>After assembling teh dataset, we used MATplotlib to plot various aspects of the weather vs. latitude. This site provides the source of data and visualizations created as part of the anlaysis, as well as explanations and description of any trends and correlations witnessed.</p>
+			</section>
+		</section>
+	</section>
+
+	<aside id="multipleImages">
+		<header class='header'>
+		<h1>Visualisation</h1>
+	</header>
+		<img id='MaxTemperature1' src="Assests/Fig1.png">
+		<img id="Humidity" src="Assests/Fig2.png">
+		<img id="Cloudiness" src="Assests/Fig3.png">
+		<img id="WindSpeed" src="Assests/Fig4.png">
+	</aside>
+	</div>
+	</main>
+
+	  
+	
